@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Login</title>
+</head>
+<a>
+    <h2>
+        Login
+    </h2>
+</a>
+
+<body>
+    <label for="cpf">CPF:<span>*</span></label><br>
+    <input type="text" id="cpf" name="cpf" required placeholder="Digite seu CPF">
+    <br><br>
+    <label for=senha> Senha<span>*</span></label><br>
+    <input type="text" id="senha" name="senha" required placeholder="Digite Sua senha">
+    <div>
+        <input type = "checkbox" id="lembrar" name = "lembrar ">
+        <label for="lembrar">Lembrar Senha</label>
+    <div>
+        <br>
+        <button type= "sunmit" class= "btn-primary-entrar" onclick = "return flase;">Entrar </button> <br>
+
+
+<a href = "esqueceuSenha.html" class = "link">Esqueceu sua Senha?</a>
+</body>
+
+</html>
