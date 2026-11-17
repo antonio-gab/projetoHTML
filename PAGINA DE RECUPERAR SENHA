@@ -1,26 +1,59 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esqueceu a Senha </title>
-    <A>
-        <h2>
-            RECUPERAR SENHA 
-        </h2>
-    </A>
+    <title>Recuperar Senha</title>
+
+    <link rel="stylesheet" href="recuperarSenha.css">
 </head>
 
 <body>
-    <label for="Esqueceu Senha">Escreva Sua Nova Senha:<span>*</span></label><br>
-    <input type="text" id="Esqueceu Senha" name="cpf" required placeholder="Digite sua Senha">
 
-    <div>
-        <input type = "checkbox" id="lembrar" name = "lembrar ">
-        <label for="lembrar">Lembrar Senha</label>
-    <div>
-        <br>
-        <button type= "sunmit" class= "btn-primary-entrar" onclick = "return flase;">Entrar </button> <br>
-    
+    <main class="recuperar-container">
+
+        <div class="icone-recuperacao">
+            <span>🔒</span>
+        </div>
+
+        <h1>RECUPERAR SENHA</h1>
+
+        <p class="descricao">
+            Digite sua nova senha para atualizar seu acesso.
+        </p>
+
+        <form>
+
+            <div class="campo">
+                <label for="senha">Nova Senha:<span>*</span></label>
+
+                <input
+                    type="password"
+                    id="senha"
+                    name="senha"
+                    required
+                    placeholder="Digite sua nova senha"
+                >
+            </div>
+
+            <div class="lembrar">
+                <input type="checkbox" id="lembrar" name="lembrar">
+                <label for="lembrar">Lembrar senha</label>
+            </div>
+
+            <button type="submit" class="btn-recuperar">
+                SALVAR NOVA SENHA
+            </button>
+
+        </form>
+
+        <a href="login.html" class="link-voltar">
+            Voltar para o Login
+        </a>
+
+    </main>
+
 </body>
 </html>
