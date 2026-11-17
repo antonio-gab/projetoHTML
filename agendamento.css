@@ -1,0 +1,208 @@
+
+/* ==========================
+   CONFIGURAÇÕES GERAIS
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #4720a8,
+        #a000d5
+    );
+
+    padding: 45px 20px;
+}
+
+
+/* ==========================
+   CONTAINER PRINCIPAL
+========================== */
+
+.pagina-agendamento {
+    background-color: #ffffff;
+
+    width: 100%;
+    max-width: 750px;
+
+    margin: 0 auto;
+    padding: 40px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+
+/* ==========================
+   CABEÇALHO
+========================== */
+
+.cabecalho {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.cabecalho h1 {
+    color: #6320b8;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.cabecalho p {
+    color: #999999;
+    font-size: 14px;
+}
+
+
+/* ==========================
+   SEÇÕES DO FORMULÁRIO
+========================== */
+
+.form-section {
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.form-section h2 {
+    color: #7123bd;
+    font-size: 19px;
+
+    margin-bottom: 22px;
+    padding-left: 12px;
+
+    border-left: 4px solid #9620d0;
+}
+
+
+/* ==========================
+   CAMPOS
+========================== */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+.campo label {
+    color: #444444;
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-bottom: 9px;
+}
+
+.campo label span {
+    color: #dc2626;
+    margin-left: 4px;
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+    height: 46px;
+
+    padding: 0 14px;
+
+    border: 1px solid #dddddd;
+    border-radius: 9px;
+
+    background-color: #f9f8fc;
+
+    color: #444444;
+    font-size: 14px;
+
+    outline: none;
+    transition: 0.3s;
+}
+
+
+/* Efeito ao selecionar os campos */
+
+.campo input:focus,
+.campo select:focus {
+    border-color: #8520c8;
+
+    background-color: #ffffff;
+
+    box-shadow: 0 0 0 3px rgba(133, 32, 200, 0.10);
+}
+
+
+/* ==========================
+   BOTÃO DE AGENDAMENTO
+========================== */
+
+.btn-agendar {
+    width: 100%;
+    height: 50px;
+
+    border: none;
+    border-radius: 25px;
+
+    background: linear-gradient(
+        90deg,
+        #5720b8,
+        #a000d5
+    );
+
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* Efeito do botão */
+
+.btn-agendar:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 7px 18px rgba(130, 20, 200, 0.30);
+}
+
+
+/* ==========================
+   RESPONSIVIDADE
+========================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 12px;
+    }
+
+    .pagina-agendamento {
+        padding: 25px 20px;
+    }
+
+    .cabecalho h1 {
+        font-size: 23px;
+    }
+
+    .form-section h2 {
+        font-size: 17px;
+    }
+
+    .campo input,
+    .campo select {
+        height: 44px;
+    }
+}
