@@ -1,58 +1,98 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendamento de Consulta</title>
+
+    <link rel="stylesheet" href="agendamento.css">
 </head>
+
 <body>
-    <a>
-        <h2>
-            Agendamento de Consulta
-        </h2>
 
-     <label for="nome">Nome do Paciente:<span>*</span></label><br>
-    <input type="text" id="nome" name="nome" required placeholder="Digite o nome do paciente">
-    
-    <br><br>
+    <main class="pagina-agendamento">
 
-     <label for="data de nascimento">Data de Nascimento:<span>*</span></label><br>
-     <input type="text" id="data de nascimento" name="data de nascimento" required placeholder="Digite a data de nascimento">
-    <br><br>
+        <header class="cabecalho">
+            <h1>Agendamento de Consulta</h1>
+            <p>Preencha os dados abaixo para marcar sua consulta.</p>
+        </header>
 
-     <label for="cpf">CPF:<span>*</span></label><br>
-    <input type="text" id="cpf" name="cpf" required placeholder="Digite seu CPF">
-    
-    <br><br>
+        <form class="form-agendamento">
 
-    <a>
-        <h2>
-            Data e Horário da Consulta
-        </h2>
+            <!-- Dados do paciente -->
+            <section class="form-section">
 
-    <label for="data da consulta">Data da Consulta:<span>*</span></label><br>
-    <input type="date" id="data da consulta" name="data da consulta" required placeholder="Digite a data da consulta">
-    <br><br>
+                <h2>Dados do Paciente</h2>
 
-    <label for="horario da consulta">Horário da Consulta:<span>*</span></label><br>
-    <input type="time" id="horario da consulta" name="horario da consulta" required placeholder="Digite o horário da consulta">
-    <br><br>
+                <div class="campo">
+                    <label for="nome">Nome do Paciente:<span>*</span></label>
+                    <input type="text" id="nome" name="nome"
+                        required placeholder="Digite o nome do paciente">
+                </div>
 
-    <a>
-        <h2>
-            Médico Responsável
-        </h2>
-    </a>
-    <label for="tipo de consulta">Médico Responsável:<span>*</span></label><br>
-    <select id="tipo de consulta" name="tipo de consulta" required>
-        <option value="">Selecione o Médico Responsável</option>
-        <option value="consulta1">Dr.Luan Pereira</option>
-        <option value="consulta2">Dr. Ze Felipe</option>
-        <option value="consulta3">Dra. Virginia</option>
-     <br><br>
+                <div class="campo">
+                    <label for="nascimento">Data de Nascimento:<span>*</span></label>
+                    <input type="date" id="nascimento" name="nascimento" required>
+                </div>
 
-    <button type= "submit" class= "btn-primary-entrar" onclick = "return false;">Agendar Consulta </button> <br>
+                <div class="campo">
+                    <label for="cpf">CPF:<span>*</span></label>
+                    <input type="text" id="cpf" name="cpf"
+                        required placeholder="Digite seu CPF">
+                </div>
 
-    
+            </section>
+
+
+            <!-- Data e horário -->
+            <section class="form-section">
+
+                <h2>Data e Horário da Consulta</h2>
+
+                <div class="campo">
+                    <label for="data-consulta">Data da Consulta:<span>*</span></label>
+                    <input type="date" id="data-consulta"
+                        name="data-consulta" required>
+                </div>
+
+                <div class="campo">
+                    <label for="horario">Horário da Consulta:<span>*</span></label>
+                    <input type="time" id="horario"
+                        name="horario" required>
+                </div>
+
+            </section>
+
+
+            <!-- Médico responsável -->
+            <section class="form-section">
+
+                <h2>Médico Responsável</h2>
+
+                <div class="campo">
+                    <label for="medico">Médico Responsável:<span>*</span></label>
+
+                    <select id="medico" name="medico" required>
+                        <option value="">Selecione o Médico Responsável</option>
+                        <option value="luan">Dr. Luan Pereira</option>
+                        <option value="ze-felipe">Dr. Ze Felipe</option>
+                        <option value="virginia">Dra. Virginia</option>
+                    </select>
+                </div>
+
+            </section>
+
+
+            <button type="submit" class="btn-agendar">
+                Agendar Consulta
+            </button>
+
+        </form>
+
+    </main>
+
 </body>
 </html>
+
