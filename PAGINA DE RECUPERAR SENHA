@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,15 @@
 </head>
 
 <body>
+    <label for="Esqueceu Senha">Escreva Sua Nova Senha:<span>*</span></label><br>
+    <input type="text" id="Esqueceu Senha" name="cpf" required placeholder="Digite sua Senha">
+
+    <div>
+        <input type = "checkbox" id="lembrar" name = "lembrar ">
+        <label for="lembrar">Lembrar Senha</label>
+    <div>
+        <br>
+        <button type= "sunmit" class= "btn-primary-entrar" onclick = "return flase;">Entrar </button> <br>
     
 </body>
 </html>
