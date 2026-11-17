@@ -1,41 +1,131 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Login</title>
-
+    <title>Login</title>
     <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
 
-    <main class="container">
+    <main class="login-page">
 
-        <h2>Login</h2>
+        <!-- LADO ESQUERDO -->
+        <section class="login-banner">
 
-        <label for="cpf">CPF:<span>*</span></label>
-        <input type="text" id="cpf" name="cpf" required placeholder="Digite seu CPF">
+            <div class="circle circle-top"></div>
+            <div class="circle circle-bottom"></div>
 
-        <label for="senha">Senha<span>*</span></label>
-        <input type="password" id="senha" name="senha" required placeholder="Digite sua senha">
+            <div class="illustration">
 
-        <div class="lembrar">
-            <input type="checkbox" id="lembrar" name="lembrar">
-            <label for="lembrar">Lembrar Senha</label>
-        </div>
+                <div class="monitor">
+                    <div class="monitor-screen">
 
-        <button type="submit" class="btn-primary-entrar">
-            Entrar
-        </button>
+                        <div class="lock">
+                            <div class="lock-handle"></div>
+                            <div class="lock-body"></div>
+                        </div>
 
-        <a href="esqueceuSenha.html" class="link">
-            Esqueceu sua Senha?
-        </a>
+                        <div class="fake-input"></div>
+                        <div class="fake-input short"></div>
+
+                        <div class="stars">
+                            ★ ★ ★ ★
+                        </div>
+
+                    </div>
+                    <div class="monitor-base"></div>
+                </div>
+
+                <div class="person">
+                    <div class="person-head"></div>
+                    <div class="person-body"></div>
+                    <div class="person-leg left"></div>
+                    <div class="person-leg right"></div>
+                </div>
+
+            </div>
+
+            <div class="banner-text">
+                <h1>Bem-vindo!</h1>
+                <p>Acesse sua conta e aproveite nossa plataforma.</p>
+            </div>
+
+        </section>
+
+
+        <!-- LADO DIREITO -->
+        <section class="login-content">
+
+            <div class="login-box">
+
+                <div class="user-icon">
+                    <div class="user-head"></div>
+                    <div class="user-body"></div>
+                </div>
+
+                <h2>USER LOGIN</h2>
+
+                <p class="subtitle">
+                    Entre com seus dados para continuar
+                </p>
+
+                <form>
+
+                    <div class="input-group">
+                        <input
+                            type="text"
+                            id="cpf"
+                            name="cpf"
+                            placeholder="DIGITE SEU CPF"
+                            required
+                        >
+                        <span class="input-icon">♙</span>
+                    </div>
+
+                    <div class="input-group">
+                        <input
+                            type="password"
+                            id="senha"
+                            name="senha"
+                            placeholder="DIGITE SUA SENHA"
+                            required
+                        >
+                        <span class="input-icon">🔒</span>
+                    </div>
+
+                    <div class="options">
+
+                        <label class="remember">
+                            <input type="checkbox" id="lembrar">
+                            <span>Lembrar senha</span>
+                        </label>
+
+                        <a href="esqueceuSenha.html">
+                            Esqueceu a senha?
+                        </a>
+
+                    </div>
+
+                    <button type="submit" class="btn-login">
+                        ENTRAR
+                    </button>
+
+                </form>
+
+                <p class="footer-text">
+                    Sistema de acesso
+                </p>
+
+            </div>
+
+        </section>
 
     </main>
 
 </body>
-
 </html>
+
