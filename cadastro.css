@@ -1,0 +1,302 @@
+
+/* ==========================
+   CONFIGURAÇÕES GERAIS
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #4720a8,
+        #a000d5
+    );
+
+    padding: 40px 20px;
+}
+
+
+/* ==========================
+   CONTAINER PRINCIPAL
+========================== */
+
+.cadastro-container {
+    width: 100%;
+    max-width: 750px;
+
+    margin: 0 auto;
+    padding: 40px;
+
+    background-color: #ffffff;
+
+    border-radius: 18px;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+
+/* ==========================
+   CABEÇALHO
+========================== */
+
+.cabecalho {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.icone-cadastro {
+    width: 85px;
+    height: 85px;
+
+    margin: 0 auto 18px;
+
+    background-color: #f0e5fa;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone-cadastro span {
+    font-size: 38px;
+}
+
+.cabecalho h1 {
+    color: #7123bd;
+    font-size: 26px;
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+}
+
+.cabecalho p {
+    color: #999999;
+    font-size: 14px;
+}
+
+
+/* ==========================
+   SEÇÕES DO FORMULÁRIO
+========================== */
+
+.form-section {
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.form-section h2 {
+    color: #7123bd;
+    font-size: 19px;
+
+    margin-bottom: 22px;
+    padding-left: 12px;
+
+    border-left: 4px solid #9620d0;
+}
+
+
+/* ==========================
+   CAMPOS
+========================== */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+.campo label {
+    color: #444444;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-bottom: 9px;
+}
+
+.campo label span {
+    color: #dc2626;
+    margin-left: 4px;
+}
+
+.campo input {
+    width: 100%;
+    height: 46px;
+
+    padding: 0 14px;
+
+    border: 1px solid #dddddd;
+    border-radius: 9px;
+
+    background-color: #f9f8fc;
+
+    color: #444444;
+    font-size: 14px;
+
+    outline: none;
+    transition: 0.3s;
+}
+
+
+/* Efeito ao selecionar os campos */
+
+.campo input:focus {
+    border-color: #8520c8;
+
+    background-color: #ffffff;
+
+    box-shadow: 0 0 0 3px rgba(133, 32, 200, 0.10);
+}
+
+
+/* Texto interno dos campos */
+
+.campo input::placeholder {
+    color: #aaaaaa;
+    font-size: 13px;
+}
+
+
+/* ==========================
+   TERMOS DE USO
+========================== */
+
+.termos {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 25px;
+}
+
+.termos input {
+    accent-color: #8520c8;
+    cursor: pointer;
+}
+
+.termos label {
+    color: #777777;
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+
+/* ==========================
+   BOTÃO CADASTRAR
+========================== */
+
+.btn-cadastro {
+    width: 100%;
+    height: 50px;
+
+    border: none;
+    border-radius: 25px;
+
+    background: linear-gradient(
+        90deg,
+        #5720b8,
+        #a000d5
+    );
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* Efeito do botão */
+
+.btn-cadastro:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 7px 18px rgba(130, 20, 200, 0.30);
+}
+
+.btn-cadastro:active {
+    transform: translateY(0);
+}
+
+
+/* ==========================
+   LINK PARA LOGIN
+========================== */
+
+.login-link {
+    text-align: center;
+    margin-top: 28px;
+}
+
+.login-link p {
+    color: #999999;
+    font-size: 13px;
+
+    margin-bottom: 7px;
+}
+
+.login-link a {
+    color: #8520c8;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.login-link a:hover {
+    color: #a000d5;
+    text-decoration: underline;
+}
+
+
+/* ==========================
+   RESPONSIVIDADE
+========================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 12px;
+    }
+
+    .cadastro-container {
+        padding: 25px 20px;
+    }
+
+    .cabecalho h1 {
+        font-size: 22px;
+    }
+
+    .form-section h2 {
+        font-size: 17px;
+    }
+
+    .campo input {
+        height: 44px;
+    }
+
+    .icone-cadastro {
+        width: 75px;
+        height: 75px;
+    }
+}
